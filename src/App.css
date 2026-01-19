@@ -1,0 +1,59 @@
+/* Galaxy Command Center - Rich & Detailed UI */
+:root {
+  --primary-glow: #00d2ff;
+  --secondary-glow: #3a7bd5;
+  --dark-glass: rgba(10, 10, 20, 0.85);
+  --border-glass: rgba(255, 255, 255, 0.1);
+}
+
+.galaxy-bg {
+  background: #020205;
+  background-image: radial-gradient(circle at 50% 50%, #0a1128 0%, #020205 100%);
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+.glass-panel {
+  background: var(--dark-glass);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--border-glass);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.status-tag {
+  background: rgba(0, 210, 255, 0.1);
+  color: var(--primary-glow);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
